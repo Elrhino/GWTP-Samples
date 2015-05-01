@@ -17,5 +17,5 @@
 package com.gwtplatform.samples.basic.client.place;
 
 public class TokenParameters {
-    public static final String TEXT_TO_SERVER = "textToServer";
+    public static final String TEXT_TO_SEND = "textToSend";
 }

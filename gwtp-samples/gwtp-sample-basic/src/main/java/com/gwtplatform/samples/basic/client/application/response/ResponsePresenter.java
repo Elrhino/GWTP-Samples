@@ -72,7 +72,7 @@ public class ResponsePresenter
     public void prepareFromRequest(PlaceRequest request) {
         super.prepareFromRequest(request);
 
-        textToServer = request.getParameter(TokenParameters.TEXT_TO_SERVER, null);
+        textToServer = request.getParameter(TokenParameters.TEXT_TO_SEND, null);
     }
 
     @Override
@@ -91,7 +91,7 @@ public class ResponsePresenter
         dispatcher.execute(new SendTextToServerAction(textToServer), new AsyncCallback<SendTextToServerResult>() {
             @Override
             public void onFailure(Throwable caught) {
-                getView().setServerResponse("An error occured: " + caught.getMessage());
+                getView().setServerResponse("An error occurred: " + caught.getMessage());
             }
 
             @Override

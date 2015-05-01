@@ -7,15 +7,10 @@
 
         <header>
             <div class="{res.style.container}">
-                <h1>GWTP Basic Example</h1>
+                <h1>GWTP Newbie Guide</h1>
                 <ul>
                     <li>
-                        <a href="https://github.com/ArcBees/GWTP">[ Project Home ]</a>
-                    </li>
-                    <li>
-                        <a href="https://github.com/ArcBees/GWTP-Samples/tree/master/gwtp-samples/gwtp-sample-basic">[
-                            Source ]
-                        </a>
+                        <a href="#">Home</a>
                     </li>
                 </ul>
             </div>
@@ -31,6 +26,8 @@
             <g:HTML ui:field="error" styleName="{res.style.labelError}"/>
         </div>
 
+        <!-- Add a field for the presenter widget to be shown -->
+        <g:SimplePanel ui:field="ourWidget"/>
     </g:HTMLPanel>
 </ui:UiBinder>
 

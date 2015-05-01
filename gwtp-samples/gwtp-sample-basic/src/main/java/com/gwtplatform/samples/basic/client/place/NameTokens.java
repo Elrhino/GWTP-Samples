@@ -22,6 +22,7 @@ package com.gwtplatform.samples.basic.client.place;
 public class NameTokens {
     public static final String home = "home";
     public static final String response = "response";
+    public static final String second = "second";
 
     public static String getHome() {
         return home;
@@ -29,5 +30,10 @@ public class NameTokens {
 
     public static String getResponse() {
         return response;
+    }
+
+    // TODO: Document this !
+    public static String getSecond() {
+        return second;
     }
 }

@@ -24,6 +24,7 @@ import com.google.gwt.uibinder.client.UiField;
 import com.google.gwt.uibinder.client.UiHandler;
 import com.google.gwt.user.client.ui.Button;
 import com.google.gwt.user.client.ui.HTML;
+import com.google.gwt.user.client.ui.SimplePanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.Widget;
 import com.gwtplatform.mvp.client.ViewWithUiHandlers;
@@ -38,6 +39,8 @@ public class ApplicationView extends ViewWithUiHandlers<ApplicationUiHandlers> i
     Button sendButton;
     @UiField
     HTML error;
+    @UiField
+    SimplePanel ourWidget;
 
     @Inject
     ApplicationView(

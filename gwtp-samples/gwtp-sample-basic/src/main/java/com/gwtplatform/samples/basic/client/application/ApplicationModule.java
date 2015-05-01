@@ -18,11 +18,15 @@ package com.gwtplatform.samples.basic.client.application;
 
 import com.gwtplatform.mvp.client.gin.AbstractPresenterModule;
 import com.gwtplatform.samples.basic.client.application.response.ResponseModule;
+import com.gwtplatform.samples.basic.client.application.second.SecondModule;
 
 public class ApplicationModule extends AbstractPresenterModule {
     @Override
     protected void configure() {
         install(new ResponseModule());
+
+        // TODO: Document this !
+        install(new SecondModule());
 
         bindPresenter(ApplicationPresenter.class, ApplicationPresenter.MyView.class, ApplicationView.class,
                 ApplicationPresenter.MyProxy.class);
